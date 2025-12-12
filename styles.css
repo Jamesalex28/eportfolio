@@ -1,0 +1,158 @@
+/* wrapp center */
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Liquid layout */
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Body vertical in all the page */
+}
+
+/* box for the two columns */
+.columns {
+    display: flex;
+    height: 100vh; /* vertical column */
+}
+
+/* column left style */
+.column-left {
+    width: 25%; 
+    background-color: #F9B872; /* Solo para visualizar */
+    padding: 2%; /* Flexible padding */
+    box-sizing: border-box; /* Padding no afecta el tamaño */
+    overflow-y: auto; /* Asegura que el contenido no desborde */
+}
+
+/* Estilo para la columna derecha */
+.column-right {
+    width: 75%; /* Ocupa el 70% del ancho */
+    background-color: #FAE7A5; /* Solo para visualizar */
+    padding: 2%; /* Flexible padding */
+    box-sizing: border-box;
+    overflow-y: auto; /* Para que el contenido sea scrollable si es necesario */
+}
+
+/* header style */
+header {
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #F9B872;
+    
+}
+
+/* Nav style */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos del main */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333399;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%; /* Cambiado para imágenes flexibles */
+    height: auto;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Bordes para celdas y encabezados */
+table, th, td {
+    border: 1px solid #333; /* Color de los bordes */
+}
+
+/* Estilo para las celdas */
+th, td {
+    padding: 10px;
+    text-align: left; /* Alineación del texto */
+}
+
+/* Color de fondo para encabezados */
+th {
+    background-color: #f4b872;
+    color: #333;
+}
+
+/* Color alternativo para filas */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Resaltar fila al pasar el cursor */
+tr:hover {
+    background-color: #f1f1f1;
+}

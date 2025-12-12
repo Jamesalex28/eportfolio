@@ -1,0 +1,219 @@
+<!-- JAMES LEE 10/20/24 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Embedded styles for the form */
+        form {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"], form input[type="reset"] {
+            width: auto;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box for two columns -->
+    <div class="columns">
+        <!-- Column left -->
+        <div class="column-left">
+            <h2>RESUME</h2>
+            <header>
+                <img src="james.jpeg" alt="james">
+                <h1>JAMES LEE</h1>
+                <p>Business Administrator, Specialist in Data Analysis</p>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="proyects.html">Proyects</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Column right -->
+        <div class="column-right">
+            <h2>Welcome</h2>
+            <main>
+                <section>
+                    <h2>My Professional Projects</h2>
+                    <p>
+                        Throughout my career, I have worked on various projects that involved complex problem-solving
+                        and innovative strategies to achieve business goals.
+                    </p>
+                    <p>
+                        These projects have not only enhanced my technical expertise but also honed my ability to work collaboratively
+                        with diverse teams and stakeholders.
+                    </p>
+                    <p>
+                        Below, you’ll find highlights of some key projects and a form to connect with me for collaborations or inquiries.
+
+                        <h2>Recent Proyects</h2>
+                        <p>I have my own business in Peru selling american brands, i purchase in USA and I sell In Peru.</p>
+                        <p>I am contructing a web site in shopify to sell my products you can find it at <a href="https://endalifestyle.com" class="com">Endalifestyle</a></p>
+                        <p>I am doing some consulting services to a companiesin Peru</p>
+        
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Key Projects</h2>
+                    <ul>
+                        <li>Developed a business intelligence dashboard for tracking sales performance in real-time.</li>
+                        <li>Designed and implemented KPI frameworks to measure team efficiency and productivity.</li>
+                        <li>Led a strategic planning initiative that resulted in a 15% increase in annual revenue.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Project Summary</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Year</th>
+                                <th>Type</th>
+                                <th>Key Achievement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Business Intelligence Dashboard</td>
+                                <td>2022</td>
+                                <td>Data Analysis</td>
+                                <td>Improved sales tracking efficiency</td>
+                            </tr>
+                            <tr>
+                                <td>KPI Framework</td>
+                                <td>2021</td>
+                                <td>Strategic Planning</td>
+                                <td>Increased productivity by 15%</td>
+                            </tr>
+                            <tr>
+                                <td>Website Development</td>
+                                <td>2023</td>
+                                <td>Web Design</td>
+                                <td>Launched an e-commerce platform</td>
+                            </tr>
+                            <tr>
+                                <td>Consulting Services</td>
+                                <td>2024</td>
+                                <td>Business Strategy</td>
+                                <td>Helped optimize operational workflows</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Credits</h2>
+                    <p>This page includes all the credits and attributions for the content used in this website.</p>
+
+                    <h3>External Links</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jamesalex20/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:jlee188@stumail.jccc.edu">Email</a></li>
+                        <li><a href="https://endalifestyle.com" target="_blank">Endalifestyle</a></li>
+                    </ul>
+
+                    <h3>Image Sources</h3>
+                    <ul>
+                        <li>"James" photo: Personal collection</li>
+                        <li>"Alicia" photo: Personal collection</li>
+                        <li>"Team" photo: Stock image</li>
+                        <li>"Travel" photo: Stock image</li>
+                    </ul>
+
+                    <h3>Content Sources</h3>
+                    <p>
+                        All written content is original, crafted to highlight the professional and personal experiences of James Lee.
+                    </p>
+                </section>
+                <section>
+                    <h2>Contact Me for New Projects</h2>
+                    <form action="#" method="post">
+                        <!-- Input de texto -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <!-- Input de email -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <!-- Select con opciones -->
+                        <label for="project-type">Type of Project:</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="data-analysis">Data Analysis</option>
+                            <option value="business-strategy">Business Strategy</option>
+                            <option value="kpi-development">KPI Development</option>
+                        </select>
+                
+                        <!-- Input de fecha -->
+                        <label for="start-date">Preferred Start Date:</label>
+                        <input type="date" id="start-date" name="start-date">
+                
+                        <!-- Textarea -->
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                
+                        <!-- Input de tipo checkbox -->
+                        <label>Additional Services:</label>
+                        <input type="checkbox" id="consulting" name="services" value="consulting">
+                        <label for="consulting">Consulting</label>
+                        <input type="checkbox" id="training" name="services" value="training">
+                        <label for="training">Training</label>
+                
+                        <!-- Input de tipo radio -->
+                        <label>Urgency Level:</label>
+                        <input type="radio" id="low" name="urgency" value="low">
+                        <label for="low">Low</label>
+                        <input type="radio" id="medium" name="urgency" value="medium">
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="high" name="urgency" value="high">
+                        <label for="high">High</label>
+                
+                        <!-- Botones de enviar y reset -->
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+                <p>Find me:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jamesalex20/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:jlee188@stumail.jccc.edu">Email</a></li>
+                </ul>
+                <p>&copy; 2024 James Lee. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
